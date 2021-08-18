@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+       function bangundatar(){
+           var iu;
+           bangun(iu)
+       } 
+       
+       function bangun (tipe ){
+       alert('Pilihan Bangun Datar : Persegi Panjang, Persegi, Segitiga, Jajar Genjang')
+        var bangun = prompt('Masukan Bangun Datar')
+
+        if(bangun === 'Persegi Panjang'){
+            var p = prompt('Masukan Panjang')
+            var l = prompt('Masukan Lebar')
+            var hasil = p*l
+            document.write('persegi panjang <br>')
+            document.write('Panjang : ',p,' <br>')
+            document.write('Lebar : ',l,' <br>')
+            document.write(`Hasil Luas Persegi Panjang Adalah P x l : ${hasil} <br>`)
+
+        } else if (bangun === 'Persegi'){
+            var s = prompt('Masukan Sisi')
+            var hasil = s*s
+            document.write('Persegi <br>')
+            document.write('Sisi : ',s,' <br>')
+            document.write(`Hasil Luas Persegi Adalah S x S : ${hasil} <br>`)
+        } else if (bangun === 'Jajar Genjang'){
+        var A = prompt('Masukan Alas')
+        var T = prompt('Masukan Tinggi')
+        var hasil = A*T
+        document.write('Jajar Genjang <br>')
+        document.write(`Alas : ${A} <br>`)
+        document.write(`Tinggi : ${T} <br>`)
+        document.write(`Hasil Luas Jajar Genjang Adalah A x T : ${hasil} <br>`)
+        } else if (bangun === 'Segitiga'){
+            var a = prompt('Masukan Alas')
+            var t = prompt('masukan Tinggi')
+            var b = 1/2
+            var hasil = a*t*b
+            document.write('Segitiga <br>')
+            document.write(`Alas : ${a} <br>`)
+            document.write(`Tinggi : ${t} <br>`)
+            document.write(`Hasil Luas Segitiga adalah = A x T x 1/2 : ${hasil} <br>`)
+        } else{alert('Bangun Datar Tidak di Temukan')
+    }
+       }
+
+       
+
+       bangundatar()
+       
+    </script>
+
+</body>
+</html>
